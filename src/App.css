@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
+/* Swiper active slide styling */
+.mySwiper .swiper-slide {
+          opacity: 0.6; /* Lower opacity for inactive slides */
+          transition: opacity 0.3s ease-in-out;
+        }
+        
+        .mySwiper .swiper-slide-active {
+          opacity: 1; /* Full opacity for active slide */
+          transform: scale(1.05); /* Slightly enlarge the active slide */
+        }
+        
+        .testimonial-item {
+          text-align: center;
+          max-width:100%;
+          margin: 0 auto;
+          padding: 20px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          background-color: #fff;
+          border-radius: 10px;
+        }
+        .corosell {
+          position: relative; /* To position overlay absolutely */
+        }
+        
+        .corosell img {
+          width: 100%; /* Ensure the image takes up full width */
+          opacity: 1; /* Keep image fully visible */
+        }
+        
+        .corosell::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+          z-index: 1; /* Place overlay above image but below text */
+        }
+        
+        .corosell h1 {
+          font-size: 50px;
+          font-weight: 900;
+          /* background-image: linear-gradient(to bottom, #ffffff, #ff8c00); 
+          -webkit-background-clip: text;
+          color: transparent; */
+       color: white;
+          position: relative;
+          z-index: 2;
+        }
+        
+        .corosell p {
+          font-size: 20px;
+          /* font-weight: 800;
+          background-image: linear-gradient(to bottom, #ffffff, #ff8c00); 
+          -webkit-background-clip: text;
+          color: transparent; */
+       
+          position: relative;
+          z-index: 2;
+        }
+       
+        .container-1{
+          margin-top: 150px;
+        }
+        /* // galaery  */
+        .container-1 img {
+          width: 100%; /* Ensures images take full width of column */
+           /* Fixed height for uniformity */
+          object-fit: cover; /* Maintains aspect ratio */
+          transition: transform 0.3s ease; /* Smooth hover effect */
+          margin: 8px; /* Margin on all sides of the image */
+          padding: 8px; /* Padding inside the image container */
+          box-sizing: border-box; /* Ensures padding doesn't affect image width */
+        }
+        .container-1 img:hover {
+          transform: scale(1.1); /* Zooms in on hover */
+          cursor: pointer;
+        }
+       
+        /* mercuee offer  */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+        .marquee_container {
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          background: black;
+          padding: 5px;
+          
+        }
+        .marquee {
+          display: inline-block;
+          animation: marquee 20s linear infinite;
+        }
+        .marquee_container  h5 {
+          display: inline-block;
+          margin-right: 50px;
+          color: whitesmoke;
+          margin: 5px 20px;
+        }
+        @keyframes marquee {
+          0% {
+            transform: translateX(350%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+        @media (max-width: 712px) {
+          @keyframes marquee {
+            0% {
+              transform: translateX(150%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+          .corosell h1 {
+            font-size: 25px; 
+            margin-top: 50px;
+          }
+          .corosell p {
+            font-size: 15px;
+         
+          }
+          .marquee_container  h5 {
+           
+            margin: 5px 10px;
+            font-size: 15px;
+          }
+        }
+        
