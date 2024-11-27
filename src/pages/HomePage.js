@@ -22,44 +22,31 @@ const HomePage = () => {
     <div className='index-page'>
       
   <main className="main">
-    {/* Hero Section */}
+   
     
     <CarouselImg/>
-    <Offer/>
-   {/* <Hero/> */}
-    {/* /Hero Section */}
 
-    {/* About Section */}
+    <Offer/>
+  
     <About/>
-    {/* /About Section */}
-    {/* Clients Section */}
-    {/* <Clients/> */}
-    {/* /Clients Section */}
-    {/* Features Section */}
+  
     <Features2/>
-    {/* /Features Section */}
-   
-    {/* /Features Details Section */}
-    {/* Services Section */}
+  
    <Services/>
   
-    {/* /Services Section */}
-    {/* More Features Section */}
+   
     <MoreFeatures/>
-    {/* /More Features Section */}
-    {/* Pricing Section */}
-    <Pricing/>
-    {/* /Pricing Section */}
+   
+    {/* <Pricing/> */}
+   
     <Employee/>
-    {/* Faq Section */}
+   
     <FAQ/>
-    {/* /Faq Section */}
-    {/* Testimonials Section */}
+  
     <Testimonials/>
-    {/* /Testimonials Section */}
-    {/* Contact Section */}
+    
     <Contact/>
-    {/* /Contact Section */}
+   
   </main>
 
   
