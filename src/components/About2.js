@@ -6,7 +6,7 @@ const About2 = () => {
     <>
       {/* Hero Section */}
       <section className="bg-light py-5 mt-5 ">
-        <div className="container text-center mt-5" >
+        <div className="container text-center mt-5 "data-aos="fade-up" >
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0">
               <img
@@ -16,7 +16,7 @@ const About2 = () => {
               />
             </div>
             <div className="col-md-6">
-              <h1 className="">About Us</h1>
+              <h2 className="">About Us</h2>
               <p className="">
                 We deliver innovative solutions that empower businesses to excel
                 in their industries, ensuring operational excellence.
@@ -27,11 +27,11 @@ const About2 = () => {
       </section>
 
       {/* Vision Section */}
-      <section className="py-5">
-        <div className="container">
-          <h3 className="text-center mb-4">
+      <section className="py-5"data-aos="fade-up">
+        <div className="container section-title">
+          <h2 className="text-center mb-4">
             <span className="text-warning">★</span> Vision
-          </h3>
+          </h2>
           <p className="text-center ">
             To deliver solutions that align with executive goals, enabling
             leaders to achieve operational excellence and long-term vision.
@@ -40,11 +40,11 @@ const About2 = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="bg-light py-5">
-        <div className="container">
-          <h3 className="text-center mb-4">
+      <section className="bg-light py-5" data-aos="fade-up">
+        <div className="container section-title">
+          <h2 className="text-center mb-4">
             <span className="text-warning">★</span> Mission
-          </h3>
+          </h2>
           <p className="text-center text-muted">
             To set new benchmarks in the industry by executing every project
             with precision, passion, and commitment.
@@ -53,11 +53,11 @@ const About2 = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-5">
-        <div className="container">
-          <h3 className="text-center mb-5">
+      <section className="py-5" data-aos="fade-up">
+        <div className="container section-title">
+          <h2 className="text-center mb-5">
             <span className="text-warning">★</span> Our Values
-          </h3>
+          </h2>
           <div className="row">
             {/* Value 1 */}
             <div className="col-md-4 text-center mb-4">
